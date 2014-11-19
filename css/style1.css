@@ -1,0 +1,104 @@
+@font-face {
+        font-family: telegrama;
+     	src: url(fonts/telegrama_render.ttf) format("truetype"),
+     		 url(fonts/telegrama_render.otf) format("opentype");
+}
+
+body {
+	font-family: "Open Sans";
+	font-size: 12px;
+	margin:50px 0px; padding:0px;
+	text-align:center;
+	background-color: #244444;
+	}
+
+h1,h2,p {
+	font-family: inherit;
+	color:#D5D5D5;
+}
+
+h3 {
+font-family: inherit;
+color:#FDD000;
+}
+
+video, #info, #description {
+	display: none;
+}
+
+#container {
+	text-align:left;
+	background: #444444;
+	color: #D5D5D5;
+	margin:50px 0px; padding:0px;
+	text-align:center;
+		display:clear;
+}
+
+.btn-custom { background-color: hsl(0, 0%, 79%) !important; background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#134134134", endColorstr="#c9c9c9"); background-image: -khtml-gradient(linear, left top, left bottom, from(#134134134), to(#c9c9c9)); background-image: -moz-linear-gradient(top, #134134134, #c9c9c9); background-image: -ms-linear-gradient(top, #134134134, #c9c9c9); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #134134134), color-stop(100%, #c9c9c9)); background-image: -webkit-linear-gradient(top, #134134134, #c9c9c9); background-image: -o-linear-gradient(top, #134134134, #c9c9c9); background-image: linear-gradient(#134134134, #c9c9c9); border-color: #c9c9c9 #c9c9c9 hsl(0, 0%, 68.5%); color: #333 !important; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.69); -webkit-font-smoothing: antialiased; }
+
+
+#lefttext
+{
+	display: inline;
+	width: 50px;
+	margin-right: 50px;
+	font-family: inherit;
+}
+
+#righttext
+{
+	display: inline;
+	width:50px;
+	margin-left: 50px;
+	font-family: inherit;
+}
+
+#m1{
+	text-align:center;
+	background-color:#E4E4E4;
+	color:#111111;
+}
+
+#m1:hover{
+	color:#555555;
+	background-color:#FDD000;
+}
+
+#vol{
+	display:inline;
+	padding-right:20px;
+	color:#FDD000;	
+}
+
+#chord{
+	display: inline;
+	padding-left:20px;
+	color:#FDD000;	
+}
+
+a{
+	text-decoration:none;
+	color: #244444;
+}
+
+a:hover{
+	background-color:#FDD000;
+}
+
+#contcomment{
+background-color: #244444;
+}
+
+#HCB_comment_box{
+	width:500px;
+	text-align:left;
+	padding:50px;
+	background-color: #244444;
+}
+
+.fb-like{
+display:clear;
+text-align:left;
+margin:0 auto;
+}
