@@ -135,33 +135,33 @@ function Update(sig)
 	case 0 :
 	{
 	document.getElementById("signal-text").innerHTML="Sine Wave";
-	oscillator.type=0;
+	oscillator.type='sine';
 	break;
 	}
 	//square
 	case 1 :
 	{
 	document.getElementById("signal-text").innerHTML="Square Wave";
-	oscillator.type=1;
+	oscillator.type='square';;
 	break;
 	}
 	//sawtooth
 	case 2 :
 	{
 	document.getElementById("signal-text").innerHTML="Sawtooth Wave";
-	oscillator.type=2;
+	oscillator.type='sawtooth';;
 	break;
 	}
 	//triangle
 	case 3 :
 	{
 	document.getElementById("signal-text").innerHTML="Triangle Wave";
-	oscillator.type=3;
+	oscillator.type='triangle';
 	break;
 	}
 	default :
 	{
-	oscillator.type=0;
+	oscillator.type='sine';
 	sig = 0;
 	document.getElementById("signal-text").innerHTML="Sine Wave";
 	}
