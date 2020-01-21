@@ -38,7 +38,10 @@ canv.addEventListener("mouseup",mouseUp,false);
     gOsc.connect(audioContext.destination);
     oscillator.type = 0;
     gOsc.gain.value = 0;
-    oscillator.start(1);
+	oscillator.start(1);
+	if(audioContext.state === 'running') {
+		document.getElementById("signal-text").innerHTML="Sine Wave";
+	}
   }
   catch(e) {
     alert('Web Audio API is not supported in this browser, try latest google chrome');
@@ -60,6 +63,7 @@ function mouseUp()
 
 function touchDown()
 {
+
 	mouseIsDown = 1;
 	
 	touchMove();
@@ -129,6 +133,9 @@ function showPos()
 })();
 function Update(sig)
 {
+	if(audioContext.state !== 'running') {
+		audioContext.resume()
+	}
 	switch(sig)
 	{
 	//sine
